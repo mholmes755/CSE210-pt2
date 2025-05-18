@@ -48,6 +48,7 @@ public class Journal{
 
     public void LoadFromFile(string _filename)
     {
+        
         try
         {
             using (StreamReader reader = new StreamReader(_filename))
