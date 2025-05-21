@@ -34,6 +34,7 @@ class Program
         Console.WriteLine(fraction3.GetDecimal());
         Console.WriteLine("--------");
         Console.WriteLine(); // Add blank space
+        
 
 
 
