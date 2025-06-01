@@ -1,9 +1,38 @@
 public class Customer
 {
-    // customer name
-    // customer address(Address type variable)
+    private string _firstName;
+    private string _lastName;
+    private Address _address;
 
+
+    public Customer(string firstName, string lastName, Address address)
+    {
+        _firstName = firstName;
+        _lastName = lastName;
+        _address = address;
+    }
+
+        public string FirstName // getter and setter for product name
+    {
+        get { return _firstName; }
+        set { _firstName = value; }
+    }
+
+    public string LastName // getter and setter for product name
+    {
+        get { return _lastName; }
+        set { _lastName = value; }
+    }
+
+    public void IsUS()
+    {
+        bool isUs = _address.IsUSA();
+    }
+    // public bool LivesInUnitedStates()
+    // {
+    //     return true;
+    // }
     // method to return if a cust lives in the US(call method on the Address)
-    
+
 
 }
