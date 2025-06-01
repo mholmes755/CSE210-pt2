@@ -28,11 +28,5 @@ public class Customer
     {
         bool isUs = _address.IsUSA();
     }
-    // public bool LivesInUnitedStates()
-    // {
-    //     return true;
-    // }
-    // method to return if a cust lives in the US(call method on the Address)
-
 
 }

@@ -46,7 +46,4 @@ public class Address
         Console.WriteLine($"{_streetAddress}, {_city}, {_stateOrProvince}, {_country}");
     }
 
-    // method to return if US address or foreign
-
-    // method to return to display the address in a string format with new lines where appropriate
 }
