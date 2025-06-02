@@ -1,18 +1,59 @@
 public class Video
 {
-    public string _title;
-    public string _author;
-    public int _length; // in seconds
+    private string _title;
+    private string _author;
+    private int _length; // in seconds
 
-    public List<Comment> _comments; // list of comments for a video
+    private List<Comment> _comments;
 
 
-    
-    // track the title
-    // track the author
-    // track the length
+    public Video()
+    {
+        _comments = new List<Comment>(); // initialize the list of comments
+    }
 
-    // list of comment class objects
+    public Video(string title, string author, int length)
+    {
+        _title = title;
+        _author = author;
+        _length = length;
+        _comments = new List<Comment>(); // initialize the list of comments
+    }
 
-    // method to return number of comments directly from the way comments are stored
+
+    public string Title // getter and setter for title
+    {
+        get { return _title; }
+        set { _title = value; }
+    }
+
+    public string Author // getter and setter for author
+    {
+        get { return _author; }
+        set { _author = value; }
+    }
+
+    public int Length // getter and setter for length
+    {
+        get { return _length; }
+        set { _length = value; }
+    }
+
+
+    public int GetCommentCount()
+    {
+        return _comments.Count;
+    }
+
+    public void AddComment(Comment comment)
+    {
+        _comments.Add(comment);
+    }
+
+// this doesn't create a new list. It returns the existing list of comments
+// "List<Comment>" is the return type of the method
+    public List<Comment> GetComments() 
+    {
+        return _comments;
+    }
 }
